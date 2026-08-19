@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>טיול למרכז סין | רמת טיבט</title>
+<meta name="description" content="גלריית תמונות נבחרות מהטיול לרמת טיבט ומרכז סין - מפות, גיאוגרפיה אנושית וגיאוגרפיה פיסית.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">אלבום טיול</p>
+    <h1>טיול למרכז סין</h1>
+    <p class="hero-subtitle">רמת טיבט &middot; דרך המשי &middot; מדבר גובי</p>
+    <nav class="hero-nav" aria-label="ניווט בין קטגוריות">
+      <a href="#maps">מפות</a>
+      <a href="#human">גיאוגרפיה אנושית</a>
+      <a href="#physical">גיאוגרפיה פיסית</a>
+    </nav>
+  </div>
+</header>
+
+<main id="gallery-root">
+  <!-- הקטגוריות נבנות אוטומטית ע"י script.js מתוך data.json -->
+  <p class="loading">טוען תמונות...</p>
+</main>
+
+<footer class="site-footer">
+  <p>אלבום דיגיטלי מהטיול לסין ולרמת טיבט</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lightbox-close" id="lightbox-close" aria-label="סגירה">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="התמונה הקודמת">&#8250;</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="התמונה הבאה">&#8249;</button>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <p id="lightbox-caption-text"></p>
+      <p class="lightbox-counter" id="lightbox-counter"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

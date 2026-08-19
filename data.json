@@ -1,0 +1,374 @@
+[
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "מפת דרך המשי",
+    "filename": "maps-01.jpg"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "מפת תקריב מסלול הטיול",
+    "filename": "maps-02.jpg"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "מסלול הטיסות",
+    "filename": "maps-03.jpg"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "אזור הטיול",
+    "filename": "maps-04.jpg"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "מפת אזורים עיקריים",
+    "filename": "maps-05.jpg"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "טקטוניקת הלוחות באזור",
+    "filename": "maps-06.jpg"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "מפת צפיפות האוכלוסייה בסין",
+    "filename": "maps-07.png"
+  },
+  {
+    "group": "maps",
+    "groupLabel": "מפות",
+    "caption": "השוואת שטחה של סין לישראל",
+    "filename": "maps-08.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "סגנון הבנייה בערי ההרים",
+    "filename": "human-01.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "שטפון במדבר גובי",
+    "filename": "human-02.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "כל הכבישים מצולמים 24/7",
+    "filename": "human-03.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "חינוך לסביבה - הכיתוב בתחתית:\nהוקירו את משאבי שטחי הביצה.\nהגנו על הסביבה האקולוגית",
+    "filename": "human-04.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "קניון",
+    "filename": "human-05.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "כניסה למקדש",
+    "filename": "human-06.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "גאווה סינית - \"\"צועדים במדבר גובי ובים החולות העצום, מתעמקים במגילה הארוכה של דרך המשי, שואפים להיות בני נוער של אומה חזקה!\"",
+    "filename": "human-07.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "מוצב גבולות סיני (כיום מוזיאון)",
+    "filename": "human-08.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "בית טיבטי (עשיר)",
+    "filename": "human-09.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "טקס תחילת עונת הקציר",
+    "filename": "human-10.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "גלגלי תפילה - סוטרות",
+    "filename": "human-11.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "בודהה",
+    "filename": "human-12.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "השירותים בדרכים",
+    "filename": "human-13.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "הפקת אנרגיה - סולארי",
+    "filename": "human-14.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "יישוב ברמת טיבט",
+    "filename": "human-15.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "הבנייה מבוץ (לעניים)",
+    "filename": "human-16.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "רכסי הרים ויישובים גבוהים",
+    "filename": "human-17.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "רכסי ההרים ויישובים גבוהים",
+    "filename": "human-18.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "בית ספר אזורי",
+    "filename": "human-19.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "\"לגבש תודעה חזקה של קהילה עבור האומה הסינית\"",
+    "filename": "human-20.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "רעיית צאן (מקנה)",
+    "filename": "human-21.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "מנזר",
+    "filename": "human-22.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "נזיר טיבטי (ואני)",
+    "filename": "human-23.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "פיתוח ברחבי רמת טיבט",
+    "filename": "human-24.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "שילוט המשלב אייקונים",
+    "filename": "human-25.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "תיירות (בעיקר פנים)",
+    "filename": "human-26.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "אמריקניזציה",
+    "filename": "human-27.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "יאק טיבטי",
+    "filename": "human-28.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "הפנדות בצנגדו",
+    "filename": "human-29.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "תחנת הרכבת בצנגדו",
+    "filename": "human-30.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "שילוט המפלגה הקומוניסטית",
+    "filename": "human-31.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "אזהרה משריפות יער",
+    "filename": "human-32.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "שילוט בבייגינג",
+    "filename": "human-33.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "תחנת הרכבת בצנגדו",
+    "filename": "human-34.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "סוסים טיבטיים",
+    "filename": "human-35.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "תחנת כוח פחמית",
+    "filename": "human-36.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "בקרת אתרים - דרכון וביומטרי",
+    "filename": "human-37.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "תחנת כוח - טורבינות רוח",
+    "filename": "human-38.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "מנה חמה?",
+    "filename": "human-39.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "החדשות בטלוויזיה הסינית",
+    "filename": "human-40.jpg"
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "כפר כפרי בעמק ההרים",
+    "filename": "human-41.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "הפארק הלאומי הגיאולוגי ג'אנגיה\nמחוז גאנסו",
+    "filename": "physical-01.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "הפארק הלאומי הגיאולוגי ג'אנגיה\nמחוז גאנסו",
+    "filename": "physical-02.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "אזור דונהואנג, הר החול המהדהד",
+    "filename": "physical-03.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "מבט אל הרי סין מול המישורים",
+    "filename": "physical-04.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "שמורת הטבע הואנגלונג במחוז סצ'ואן",
+    "filename": "physical-05.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "תהליכי קימוט",
+    "filename": "physical-06.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "ביצות ומישורים נרחבים",
+    "filename": "physical-07.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "הנהר הצהוב",
+    "filename": "physical-08.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "מרחבי מדבר גובי",
+    "filename": "physical-09.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "שילוט בנושא מים לעניין הגנת הסביבה ושיקום המערכת האקולוגית",
+    "filename": "physical-10.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "שילוט באתר ואנגלונג - עם סמל אונסקו",
+    "filename": "physical-11.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "מפלי ג'יוזג'איגו",
+    "filename": "physical-12.jpg"
+  },
+  {
+    "group": "physical",
+    "groupLabel": "גיאוגרפיה פיסית",
+    "caption": "מפלים בפארק הלאומי ג'יוזג'איגו",
+    "filename": "physical-13.jpg"
+  }
+]
