@@ -51,265 +51,573 @@
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "סגנון הבנייה בערי ההרים",
-    "filename": "human-01.jpg"
+    "filename": "human-01.jpg",
+    "location": {
+      "lat": 39.782171,
+      "lon": 98.275634,
+      "approx": false,
+      "siteName": "ג'יאויגואן, מחוז גאנסו",
+      "description": "עיר בקצה המערבי של חומת הסין הגדולה, בשער הכניסה ההיסטורי בין סין הפנימית לדרך המשי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "שטפון במדבר גובי",
-    "filename": "human-02.jpg"
+    "filename": "human-02.jpg",
+    "location": {
+      "lat": 39.953398,
+      "lon": 94.293181,
+      "approx": true,
+      "siteName": "אזור דונחואנג (מיקום משוער)",
+      "description": "סביבת נווה המדבר של דונחואנג במדבר גובי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "כל הכבישים מצולמים 24/7",
-    "filename": "human-03.jpg"
+    "filename": "human-03.jpg",
+    "location": {
+      "lat": 40.454034,
+      "lon": 95.859739,
+      "approx": false,
+      "siteName": "מחוז גואאג'ואו, גאנסו",
+      "description": "אזור מדברי לאורך הכביש הראשי במחוז גואאג'ואו, שבין דונחואנג לג'יאויגואן."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "חינוך לסביבה - הכיתוב בתחתית:\nהוקירו את משאבי שטחי הביצה.\nהגנו על הסביבה האקולוגית",
-    "filename": "human-04.jpg"
+    "filename": "human-04.jpg",
+    "location": {
+      "lat": 39.953398,
+      "lon": 94.293181,
+      "approx": false,
+      "siteName": "נווה המדבר של דונחואנג",
+      "description": "עיר נווה מדבר עתיקה על דרך המשי, ידועה במערות מוגאו ובדיונות החול שמסביבה."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "קניון",
-    "filename": "human-05.jpg"
+    "filename": "human-05.jpg",
+    "location": {
+      "lat": 36.58457,
+      "lon": 101.835781,
+      "approx": false,
+      "siteName": "לג'יאוואן, שי-נינג",
+      "description": "קניון בשכונת לג'יאוואן בעיר שי-נינג, בירת מחוז צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "כניסה למקדש",
-    "filename": "human-06.jpg"
+    "filename": "human-06.jpg",
+    "location": {
+      "lat": 38.930053,
+      "lon": 100.45386,
+      "approx": false,
+      "siteName": "נאנג'יה, ג'אנגיה",
+      "description": "מקדש בפרבר נאנג'יה שבעיר ג'אנגיה, מחוז גאנסו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "גאווה סינית - \"\"צועדים במדבר גובי ובים החולות העצום, מתעמקים במגילה הארוכה של דרך המשי, שואפים להיות בני נוער של אומה חזקה!\"",
-    "filename": "human-07.jpg"
+    "filename": "human-07.jpg",
+    "location": {
+      "lat": 39.801015,
+      "lon": 98.214349,
+      "approx": false,
+      "siteName": "יואצ'ואן, ג'יאויגואן",
+      "description": "פרבר שליד מבצר ג'יאויגואן, נקודת מוצא מסורתית של שיירות דרך המשי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "מוצב גבולות סיני (כיום מוזיאון)",
-    "filename": "human-08.jpg"
+    "filename": "human-08.jpg",
+    "location": {
+      "lat": 39.800772,
+      "lon": 98.216639,
+      "approx": false,
+      "siteName": "מבצר ג'יאויגואן",
+      "description": "המבצר ההיסטורי בקצה המערבי של החומה הגדולה ששימש שער גבול רשמי של האימפריה הסינית; כיום אתר מוזיאון."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "בית טיבטי (עשיר)",
-    "filename": "human-09.jpg"
+    "filename": "human-09.jpg",
+    "location": {
+      "lat": 35.61215,
+      "lon": 102.115561,
+      "approx": false,
+      "siteName": "לאנג'יה, טונגרן",
+      "description": "כפר טיבטי באזור טונגרן (רבגונג), מחוז הואנגנאן, צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "טקס תחילת עונת הקציר",
-    "filename": "human-10.jpg"
+    "filename": "human-10.jpg",
+    "location": {
+      "lat": 35.537861,
+      "lon": 102.045129,
+      "approx": false,
+      "siteName": "וו-טון שאנג-ג'ואנג, טונגרן",
+      "description": "כפר במרכז אזור רבגונג, הידוע בטקסים בודהיסטיים מסורתיים."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "גלגלי תפילה - סוטרות",
-    "filename": "human-11.jpg"
+    "filename": "human-11.jpg",
+    "location": {
+      "lat": 35.560684,
+      "lon": 102.055316,
+      "approx": false,
+      "siteName": "וו-טון (Wutun), טונגרן",
+      "description": "כפר שליד טונגרן (רבגונג), מרכז עתיק לאמנות הבודהיזם הטיבטי וציורי התאנגקה."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "בודהה",
-    "filename": "human-12.jpg"
+    "filename": "human-12.jpg",
+    "location": {
+      "lat": 35.561468,
+      "lon": 102.055521,
+      "approx": false,
+      "siteName": "וו-טון (Wutun), טונגרן",
+      "description": "כפר שליד טונגרן (רבגונג), מרכז עתיק לאמנות הבודהיזם הטיבטי וציורי התאנגקה."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "השירותים בדרכים",
-    "filename": "human-13.jpg"
+    "filename": "human-13.jpg",
+    "location": {
+      "lat": 35.471672,
+      "lon": 102.330754,
+      "approx": false,
+      "siteName": "גרצה, טונגרן",
+      "description": "עיירה בגובה כ-3,200 מ' באזור הואנגנאן, מחוז צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "הפקת אנרגיה - סולארי",
-    "filename": "human-14.jpg"
+    "filename": "human-14.jpg",
+    "location": {
+      "lat": 35.471713,
+      "lon": 102.331924,
+      "approx": false,
+      "siteName": "גרצה, טונגרן",
+      "description": "עיירה בגובה כ-3,200 מ' באזור הואנגנאן, מחוז צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "יישוב ברמת טיבט",
-    "filename": "human-15.jpg"
+    "filename": "human-15.jpg",
+    "location": {
+      "lat": 35.49263,
+      "lon": 102.277439,
+      "approx": false,
+      "siteName": "גרצה, טונגרן",
+      "description": "עיירה בגובה כ-3,200 מ' באזור הואנגנאן, מחוז צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "הבנייה מבוץ (לעניים)",
-    "filename": "human-16.jpg"
+    "filename": "human-16.jpg",
+    "location": {
+      "lat": 35.61058,
+      "lon": 102.114045,
+      "approx": false,
+      "siteName": "לאנג'יה, טונגרן",
+      "description": "כפר טיבטי באזור טונגרן (רבגונג), מחוז הואנגנאן, צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "רכסי הרים ויישובים גבוהים",
-    "filename": "human-17.jpg"
+    "filename": "human-17.jpg",
+    "location": {
+      "lat": 34.235397,
+      "lon": 103.191172,
+      "approx": false,
+      "siteName": "ז'גאנה (Zhagana), מחוז טוו",
+      "description": "כפר הררי ציורי בעמק ז'גאנה, המכונה לעיתים 'שאנגרילה הקטנה' בשל נופיו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "רכסי ההרים ויישובים גבוהים",
-    "filename": "human-18.jpg"
+    "filename": "human-18.jpg",
+    "location": {
+      "lat": 34.237764,
+      "lon": 103.201176,
+      "approx": false,
+      "siteName": "ז'גאנה (Zhagana), מחוז טוו",
+      "description": "כפר הררי ציורי בעמק ז'גאנה, המכונה לעיתים 'שאנגרילה הקטנה' בשל נופיו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "בית ספר אזורי",
-    "filename": "human-19.jpg"
+    "filename": "human-19.jpg",
+    "location": {
+      "lat": 34.766507,
+      "lon": 102.615389,
+      "approx": false,
+      "siteName": "ניימה לונגצון, מחוז שיאחה",
+      "description": "כפר באזור שיאחה, הידוע במנזר לברנג הגדול הסמוך."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "\"לגבש תודעה חזקה של קהילה עבור האומה הסינית\"",
-    "filename": "human-20.jpg"
+    "filename": "human-20.jpg",
+    "location": {
+      "lat": 35.449735,
+      "lon": 102.4401,
+      "approx": false,
+      "siteName": "טונגרן (רבגונג)",
+      "description": "העיר טונגרן, מרכז מחוז הואנגנאן הטיבטי האוטונומי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "רעיית צאן (מקנה)",
-    "filename": "human-21.jpg"
+    "filename": "human-21.jpg",
+    "location": {
+      "lat": 33.929082,
+      "lon": 102.872878,
+      "approx": false,
+      "siteName": "מחוז זוגה (Zoigê / Ruoergai)",
+      "description": "אחת מרמות הערבה הגבוהות הגדולות בעולם, שטח מרעה מסורתי ליאקים טיבטיים."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "מנזר",
-    "filename": "human-22.jpg"
+    "filename": "human-22.jpg",
+    "location": {
+      "lat": 34.094452,
+      "lon": 102.632155,
+      "approx": false,
+      "siteName": "לאנגמוסי (Langmusi)",
+      "description": "עיירת מנזרים טיבטית-בודהיסטית על גבול גאנסו-סצ'ואן."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "נזיר טיבטי (ואני)",
-    "filename": "human-23.jpg"
+    "filename": "human-23.jpg",
+    "location": {
+      "lat": 34.084474,
+      "lon": 102.627879,
+      "approx": false,
+      "siteName": "דאצאנג, מחוז זוגה",
+      "description": "כפר ברמת הערבה של זוגה (רואארגאי), מוכר במנזריו הטיבטיים."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "פיתוח ברחבי רמת טיבט",
-    "filename": "human-24.jpg"
+    "filename": "human-24.jpg",
+    "location": {
+      "lat": 34.096291,
+      "lon": 102.640877,
+      "approx": false,
+      "siteName": "לאנגמוסי (Langmusi)",
+      "description": "עיירת מנזרים טיבטית-בודהיסטית על גבול גאנסו-סצ'ואן."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "שילוט המשלב אייקונים",
-    "filename": "human-25.jpg"
+    "filename": "human-25.jpg",
+    "location": {
+      "lat": 33.131383,
+      "lon": 103.873255,
+      "approx": false,
+      "siteName": "פארק ג'יוזג'איגו הלאומי",
+      "description": "אתר מורשת עולמית של אונסק\"ו, ידוע באגמיו הטורקיז ובמפליו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "תיירות (בעיקר פנים)",
-    "filename": "human-26.jpg"
+    "filename": "human-26.jpg",
+    "location": {
+      "lat": 33.048071,
+      "lon": 103.930735,
+      "approx": false,
+      "siteName": "פארק ג'יוזג'איגו הלאומי",
+      "description": "אתר מורשת עולמית של אונסק\"ו, ידוע באגמיו הטורקיז ובמפליו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "אמריקניזציה",
-    "filename": "human-27.jpg"
+    "filename": "human-27.jpg",
+    "location": {
+      "lat": 33.271209,
+      "lon": 103.907388,
+      "approx": false,
+      "siteName": "פנגפנג, מחוז ג'יוזג'איגו",
+      "description": "יישוב הכניסה לפארק ג'יוזג'איגו הלאומי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "יאק טיבטי",
-    "filename": "human-28.jpg"
+    "filename": "human-28.jpg",
+    "location": {
+      "lat": 34.078031,
+      "lon": 102.622039,
+      "approx": false,
+      "siteName": "דאצאנג, מחוז זוגה",
+      "description": "כפר ברמת הערבה של זוגה (רואארגאי), מוכר במנזריו הטיבטיים."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "הפנדות בצנגדו",
-    "filename": "human-29.jpg"
+    "filename": "human-29.jpg",
+    "location": {
+      "lat": 30.748271,
+      "lon": 104.136136,
+      "approx": false,
+      "siteName": "טיאנחוויג'ן, צ'נגדו",
+      "description": "בסיס המחקר לגידול פנדות ענק בצ'נגדו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "תחנת הרכבת בצנגדו",
-    "filename": "human-30.jpg"
+    "filename": "human-30.jpg",
+    "location": {
+      "lat": 30.630975,
+      "lon": 104.138979,
+      "approx": false,
+      "siteName": "באוהה, צ'נגדו",
+      "description": "תחנת הרכבת המהירה בצ'נגדו, בירת מחוז סצ'ואן."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "שילוט המפלגה הקומוניסטית",
-    "filename": "human-31.jpg"
+    "filename": "human-31.jpg",
+    "location": {
+      "lat": 33.271934,
+      "lon": 103.905773,
+      "approx": false,
+      "siteName": "פנגפנג, מחוז ג'יוזג'איגו",
+      "description": "יישוב הכניסה לפארק ג'יוזג'איגו הלאומי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "אזהרה משריפות יער",
-    "filename": "human-32.jpg"
+    "filename": "human-32.jpg",
+    "location": {
+      "lat": 33.158994,
+      "lon": 103.880647,
+      "approx": false,
+      "siteName": "זצ'אווה, מחוז ג'יוזג'איגו",
+      "description": "כפר בשולי פארק ג'יוזג'איגו הלאומי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "שילוט בבייגינג",
-    "filename": "human-33.jpg"
+    "filename": "human-33.jpg",
+    "location": {
+      "lat": 39.511742,
+      "lon": 116.41077,
+      "approx": false,
+      "siteName": "נמל התעופה הבינלאומי בייג'ינג",
+      "description": "שער הכניסה הראשי לבירת סין."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "תחנת הרכבת בצנגדו",
-    "filename": "human-34.jpg"
+    "filename": "human-34.jpg",
+    "location": {
+      "lat": 30.631594,
+      "lon": 104.141869,
+      "approx": false,
+      "siteName": "באוהה, צ'נגדו",
+      "description": "תחנת הרכבת המהירה בצ'נגדו, בירת מחוז סצ'ואן."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "סוסים טיבטיים",
-    "filename": "human-35.jpg"
+    "filename": "human-35.jpg",
+    "location": {
+      "lat": 34.092917,
+      "lon": 102.741641,
+      "approx": false,
+      "siteName": "ז'אוושה, מחוז זוגה",
+      "description": "כפר ברמת הערבה של זוגה, מוכר בגידול סוסים וצאן טיבטי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "תחנת כוח פחמית",
-    "filename": "human-36.jpg"
+    "filename": "human-36.jpg",
+    "location": {
+      "lat": 36.58457,
+      "lon": 101.835781,
+      "approx": true,
+      "siteName": "שי-נינג (מיקום משוער)",
+      "description": "סביבת העיר שי-נינג, בירת מחוז צ'ינגהאי."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "בקרת אתרים - דרכון וביומטרי",
-    "filename": "human-37.jpg"
+    "filename": "human-37.jpg",
+    "location": {
+      "lat": 40.160737,
+      "lon": 94.766309,
+      "approx": false,
+      "siteName": "צ'יאנג'ין, דונחואנג",
+      "description": "פרוור בשולי דונחואנג, בדרך לאתרי התיירות המרכזיים של האזור."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "תחנת כוח - טורבינות רוח",
-    "filename": "human-38.jpg"
+    "filename": "human-38.jpg",
+    "location": {
+      "lat": 40.575185,
+      "lon": 96.779772,
+      "approx": false,
+      "siteName": "חדונג, מחוז גואאג'ואו",
+      "description": "אזור בו הוקמו חוות טורבינות רוח נרחבות לאורך המדבר."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "מנה חמה?",
-    "filename": "human-39.jpg"
+    "filename": "human-39.jpg",
+    "location": {
+      "lat": 40.575185,
+      "lon": 96.779772,
+      "approx": true,
+      "siteName": "מחוז גואאג'ואו (מיקום משוער)",
+      "description": "תחנת דרכים במחוז גואאג'ואו, גאנסו."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "החדשות בטלוויזיה הסינית",
-    "filename": "human-40.jpg"
+    "filename": "human-40.jpg",
+    "location": {
+      "lat": 39.78214,
+      "lon": 98.275238,
+      "approx": false,
+      "siteName": "ג'יאויגואן, מחוז גאנסו",
+      "description": "עיר בקצה המערבי של חומת הסין הגדולה."
+    }
   },
   {
     "group": "human",
     "groupLabel": "גיאוגרפיה אנושית",
     "caption": "כפר כפרי בעמק ההרים",
-    "filename": "human-41.jpg"
+    "filename": "human-41.jpg",
+    "location": {
+      "lat": 39.608097,
+      "lon": 98.686748,
+      "approx": false,
+      "siteName": "שאנגבא, מחוז ג'ויוצ'ואן",
+      "description": "יישוב כפרי בעמק שבין ג'יאויגואן לדונחואנג."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "הפארק הלאומי הגיאולוגי ג'אנגיה\nמחוז גאנסו",
-    "filename": "physical-01.jpg"
+    "filename": "physical-01.jpg",
+    "location": {
+      "lat": 38.974818,
+      "lon": 100.041177,
+      "approx": false,
+      "siteName": "הפארק הגיאולוגי הלאומי ג'אנגיה דאנשיה",
+      "description": "תצורות סלע צבעוניות שנוצרו מסחיפת שכבות חול ומינרלים לאורך מיליוני שנים."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "הפארק הלאומי הגיאולוגי ג'אנגיה\nמחוז גאנסו",
-    "filename": "physical-02.jpg"
+    "filename": "physical-02.jpg",
+    "location": {
+      "lat": 38.960843,
+      "lon": 100.061561,
+      "approx": false,
+      "siteName": "הפארק הגיאולוגי הלאומי ג'אנגיה דאנשיה",
+      "description": "תצורות סלע צבעוניות שנוצרו מסחיפת שכבות חול ומינרלים לאורך מיליוני שנים."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "אזור דונהואנג, הר החול המהדהד",
-    "filename": "physical-03.jpg"
+    "filename": "physical-03.jpg",
+    "location": {
+      "lat": 39.927127,
+      "lon": 94.058618,
+      "approx": false,
+      "siteName": "הר החול המהדהד (Mingsha Shan), דונחואנג",
+      "description": "רכס דיונות ענק בשולי דונחואנג, המפורסם בקול ה'הדהוד' שהחול משמיע ברוח."
+    }
   },
   {
     "group": "physical",
@@ -321,54 +629,117 @@
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "שמורת הטבע הואנגלונג במחוז סצ'ואן",
-    "filename": "physical-05.jpg"
+    "filename": "physical-05.jpg",
+    "location": {
+      "lat": 32.724987,
+      "lon": 103.832444,
+      "approx": false,
+      "siteName": "שמורת הטבע הואנגלונג, מחוז סונגפאן",
+      "description": "אתר מורשת עולמית של אונסק\"ו, ידוע בבריכותיו הצבעוניות הנוצרות משכבות טרוונטין."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "תהליכי קימוט",
-    "filename": "physical-06.jpg"
+    "filename": "physical-06.jpg",
+    "location": {
+      "lat": 34.18347,
+      "lon": 103.194853,
+      "approx": false,
+      "siteName": "אזור ז'גאנה, מחוז טוו",
+      "description": "צוקי סלע קמוטים באזור ז'גאנה, המעידים על תהליכים גיאולוגיים של הרמת רמת טיבט."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "ביצות ומישורים נרחבים",
-    "filename": "physical-07.jpg"
+    "filename": "physical-07.jpg",
+    "location": {
+      "lat": 34.196058,
+      "lon": 102.46843,
+      "approx": false,
+      "siteName": "מחוז לוקו, גאנסו",
+      "description": "ביצות ומישורים נרחבים באזור המעבר בין רמת הערבה למחוז לוקו."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "הנהר הצהוב",
-    "filename": "physical-08.jpg"
+    "filename": "physical-08.jpg",
+    "location": {
+      "lat": 35.83677,
+      "lon": 102.082902,
+      "approx": false,
+      "siteName": "הנהר הצהוב, מחוז ג'יינצ'ה",
+      "description": "קטע בנהר הצהוב באזור ג'יינצ'ה שבמחוז צ'ינגהאי."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "מרחבי מדבר גובי",
-    "filename": "physical-09.jpg"
+    "filename": "physical-09.jpg",
+    "location": {
+      "lat": 39.927127,
+      "lon": 94.058618,
+      "approx": true,
+      "siteName": "הר החול המהדהד, דונחואנג (מיקום משוער)",
+      "description": "דיונות החול שבשולי דונחואנג."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "שילוט בנושא מים לעניין הגנת הסביבה ושיקום המערכת האקולוגית",
-    "filename": "physical-10.jpg"
+    "filename": "physical-10.jpg",
+    "location": {
+      "lat": 34.081136,
+      "lon": 102.624233,
+      "approx": false,
+      "siteName": "נהר הלבן (Bailong), מחוז זוגה",
+      "description": "שילוט הנוגע לניהול נהר הלבן הזורם דרך רמת הערבה של זוגה."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "שילוט באתר ואנגלונג - עם סמל אונסקו",
-    "filename": "physical-11.jpg"
+    "filename": "physical-11.jpg",
+    "location": {
+      "lat": 32.74415,
+      "lon": 103.831573,
+      "approx": false,
+      "siteName": "שמורת הטבע הואנגלונג, מחוז סונגפאן",
+      "description": "אתר מורשת עולמית של אונסק\"ו, ידוע בבריכותיו הצבעוניות הנוצרות משכבות טרוונטין."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "מפלי ג'יוזג'איגו",
-    "filename": "physical-12.jpg"
+    "filename": "physical-12.jpg",
+    "location": {
+      "lat": 33.165246,
+      "lon": 103.905104,
+      "approx": false,
+      "siteName": "פארק ג'יוזג'איגו הלאומי",
+      "description": "אחד ממפלי הטרוונטין הרבים בפארק, הניזונים ממערכת האגמים הטורקיז."
+    }
   },
   {
     "group": "physical",
     "groupLabel": "גיאוגרפיה פיסית",
     "caption": "מפלים בפארק הלאומי ג'יוזג'איגו",
-    "filename": "physical-13.jpg"
+    "filename": "physical-13.jpg",
+    "location": {
+      "lat": 33.165281,
+      "lon": 103.905196,
+      "approx": false,
+      "siteName": "פארק ג'יוזג'איגו הלאומי",
+      "description": "אחד ממפלי הטרוונטין הרבים בפארק, הניזונים ממערכת האגמים הטורקיז."
+    }
   }
 ]

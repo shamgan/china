@@ -50,17 +50,32 @@ async function init() {
     const grid = section.querySelector(".grid");
     groupItems.forEach((item) => {
       const globalIndex = items.indexOf(item);
-      const card = document.createElement("button");
-      card.type = "button";
+      const card = document.createElement("div");
       card.className = "card";
+      card.setAttribute("role", "button");
+      card.setAttribute("tabindex", "0");
       card.setAttribute("aria-label", item.caption);
       card.innerHTML = `
         <span class="card-img-wrap">
+          ${item.location ? `<button type="button" class="card-location-btn" aria-label="הצג מיקום על מפה"><span aria-hidden="true">📍</span></button>` : ""}
           <img src="images/${item.filename}" alt="${escapeHtml(item.caption)}" loading="lazy">
         </span>
         <span class="card-caption">${escapeHtml(item.caption)}</span>
       `;
       card.addEventListener("click", () => openLightbox(globalIndex));
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openLightbox(globalIndex);
+        }
+      });
+      const locBtn = card.querySelector(".card-location-btn");
+      if (locBtn) {
+        locBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          openLocationModal(item);
+        });
+      }
       grid.appendChild(card);
     });
 
@@ -94,6 +109,8 @@ function closeLightbox() {
   document.body.style.overflow = "";
 }
 
+const lightboxLocationBtn = document.getElementById("lightbox-location-btn");
+
 function updateLightbox() {
   const item = items[currentIndex];
   if (!item) return;
@@ -101,6 +118,13 @@ function updateLightbox() {
   lightboxImg.alt = item.caption;
   lightboxCaption.textContent = item.caption;
   lightboxCounter.textContent = `${currentIndex + 1} / ${items.length}`;
+  if (item.location) {
+    lightboxLocationBtn.hidden = false;
+    lightboxLocationBtn.onclick = () => openLocationModal(item);
+  } else {
+    lightboxLocationBtn.hidden = true;
+    lightboxLocationBtn.onclick = null;
+  }
 }
 
 function showNext() {
@@ -127,6 +151,56 @@ document.addEventListener("keydown", (e) => {
   // RTL gallery: visually-left arrow key shows next, visually-right shows prev
   if (e.key === "ArrowLeft") showNext();
   if (e.key === "ArrowRight") showPrev();
+});
+
+// ---------- Location modal ----------
+const locationModal = document.getElementById("location-modal");
+const locationSiteName = document.getElementById("location-site-name");
+const locationDescription = document.getElementById("location-description");
+const locationApproxNote = document.getElementById("location-approx-note");
+let locationMap = null;
+let locationMarker = null;
+
+function openLocationModal(item) {
+  const loc = item.location;
+  if (!loc) return;
+
+  locationSiteName.textContent = loc.siteName;
+  locationDescription.textContent = loc.description;
+  locationApproxNote.hidden = !loc.approx;
+
+  locationModal.classList.add("open");
+  locationModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+
+  if (!locationMap) {
+    locationMap = L.map("location-map");
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(locationMap);
+  }
+  locationMap.setView([loc.lat, loc.lon], 12);
+  if (locationMarker) {
+    locationMarker.setLatLng([loc.lat, loc.lon]);
+  } else {
+    locationMarker = L.marker([loc.lat, loc.lon]).addTo(locationMap);
+  }
+  locationMap.invalidateSize();
+}
+
+function closeLocationModal() {
+  locationModal.classList.remove("open");
+  locationModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = lightbox.classList.contains("open") ? "hidden" : "";
+}
+
+document.getElementById("location-modal-close").addEventListener("click", closeLocationModal);
+locationModal.addEventListener("click", (e) => {
+  if (e.target === locationModal) closeLocationModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && locationModal.classList.contains("open")) closeLocationModal();
 });
 
 init();

@@ -7,6 +7,7 @@
 <meta name="description" content="גלריית תמונות נבחרות מהטיול לרמת טיבט ומרכז סין - מפות, גיאוגרפיה אנושית וגיאוגרפיה פיסית.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 
@@ -40,11 +41,25 @@
     <img id="lightbox-img" src="" alt="">
     <div class="lightbox-caption">
       <p id="lightbox-caption-text"></p>
+      <button class="location-btn lightbox-location-btn" id="lightbox-location-btn" type="button" hidden>
+        <span aria-hidden="true">📍</span> מיקום הצילום
+      </button>
       <p class="lightbox-counter" id="lightbox-counter"></p>
     </div>
   </div>
 </div>
 
+<div class="location-modal" id="location-modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="location-modal-panel">
+    <button class="location-modal-close" id="location-modal-close" aria-label="סגירה">&times;</button>
+    <h3 id="location-site-name"></h3>
+    <p id="location-description"></p>
+    <p class="location-approx-note" id="location-approx-note" hidden>* מיקום משוער, מבוסס על תמונה סמוכה שצולמה עם GPS</p>
+    <div id="location-map"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   // Clean up any leftover service worker from the previous app at this address.
   if ('serviceWorker' in navigator) {
