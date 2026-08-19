@@ -45,6 +45,17 @@
   </div>
 </div>
 
+<script>
+  // Clean up any leftover service worker from the previous app at this address.
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((regs) => {
+      regs.forEach((reg) => reg.unregister());
+    });
+    if (window.caches) {
+      caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
+    }
+  }
+</script>
 <script src="script.js"></script>
 </body>
 </html>
