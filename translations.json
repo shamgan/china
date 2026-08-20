@@ -1,7 +1,6 @@
 {
   "captions": {
     "מפת דרך המשי": "Silk Road Map",
-    "מפת תקריב מסלול הטיול": "Close-up Map of the Trip Route",
     "מסלול הטיסות": "Flight Route",
     "אזור הטיול": "Trip Region",
     "מפת אזורים עיקריים": "Map of Main Regions",
@@ -68,7 +67,8 @@
     "ארוחה במסעדת הוטפוט סינית": "A Meal at a Chinese Hotpot Restaurant",
     "גן ופגודה סינית": "A Chinese Garden and Pagoda",
     "הר החול המהדהד, דונחואנג": "The Echoing Sand Mountain, Dunhuang",
-    "מגדל המשואה של מעבר יאנגגוואן": "The Beacon Tower of Yangguan Pass"
+    "מגדל המשואה של מעבר יאנגגוואן": "The Beacon Tower of Yangguan Pass",
+    "מסלול הטיול": "The Trip Route"
   },
   "sites": {
     "ג'יאויגואן, מחוז גאנסו": {
