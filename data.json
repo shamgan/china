@@ -741,5 +741,109 @@
       "siteName": "פארק ג'יוזג'איגו הלאומי",
       "description": "אחד ממפלי הטרוונטין הרבים בפארק, הניזונים ממערכת האגמים הטורקיז."
     }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "שיירת גמלי תיירים בין הדיונות",
+    "filename": "human-42.jpg",
+    "location": {
+      "lat": 40.089856,
+      "lon": 94.675349,
+      "approx": false,
+      "siteName": "אגם הסהר (Yueyaquan), דונחואנג",
+      "description": "אגם הסהר - נווה מדבר זעיר בלב דיונות מדבר גובי, אתר פופולרי לטיולי גמלים בדונחואנג."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "מגילת ציור של שמונה עשר הארחטים",
+    "filename": "human-43.jpg",
+    "location": {
+      "lat": 38.930151,
+      "lon": 100.455014,
+      "approx": false,
+      "siteName": "ג'אנגיה, מחוז גאנסו",
+      "description": "ציור מגילה עתיק המתאר את שמונה עשר הארחטים (Luohan) - תלמידי בודהה שהגיעו להארה."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "מקדשי המערות של מאטי סי",
+    "filename": "human-44.jpg",
+    "location": {
+      "lat": 38.500966,
+      "lon": 100.425721,
+      "approx": false,
+      "siteName": "מאטי סי (Horse Hoof Temple), מחוז סונאן",
+      "description": "מתחם מקדשים ומנזרים החצובים בתוך צוק אבן חול, מרכז עתיק למסורת הבודהיזם הטיבטי."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "תחנת הרכבת שי-נינג",
+    "filename": "human-45.jpg",
+    "location": {
+      "lat": 36.619555,
+      "lon": 101.811477,
+      "approx": false,
+      "siteName": "תחנת הרכבת, שי-נינג",
+      "description": "תחנת הרכבת המרכזית של שי-נינג, בירת מחוז צ'ינגהאי ושער הכניסה לרמת טיבט."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "פנים ההיכל הראשי במנזר",
+    "filename": "human-46.jpg",
+    "location": {
+      "lat": 35.537884,
+      "lon": 102.045071,
+      "approx": false,
+      "siteName": "וו-טון שאנג-ג'ואנג, טונגרן",
+      "description": "היכל תפילה מעוטר בציורי זהב במנזר באזור טונגרן (רבגונג)."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "חקלאות שלחין",
+    "filename": "human-47.jpg",
+    "location": {
+      "lat": 35.611867,
+      "lon": 102.116166,
+      "approx": false,
+      "siteName": "לאנג'יה, טונגרן",
+      "description": "שדות חיטה המושקים בתעלות השקיה מסורתיות בעמק טונגרן."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "ארוחה במסעדת הוטפוט סינית",
+    "filename": "human-48.jpg",
+    "location": {
+      "lat": 34.09104,
+      "lon": 102.63512,
+      "approx": false,
+      "siteName": "לאנגמוסי (Langmusi)",
+      "description": "מסעדת הוטפוט (חמין) בעיירת המנזרים לאנגמוסי, על גבול גאנסו-סצ'ואן."
+    }
+  },
+  {
+    "group": "human",
+    "groupLabel": "גיאוגרפיה אנושית",
+    "caption": "גן ופגודה סינית",
+    "filename": "human-49.jpg",
+    "location": {
+      "lat": 30.632481,
+      "lon": 104.090649,
+      "approx": false,
+      "siteName": "פארק וואנג-ג'יאנג, צ'נגדו",
+      "description": "פארק נוף עם בריכה, גשר ופגודת במבוק בצ'נגדו, הידוע גם כפארק מגדל צופה הנהר."
+    }
   }
 ]
