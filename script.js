@@ -474,9 +474,10 @@ function openLocationModal(item) {
 
   if (!locationMap) {
     locationMap = L.map("location-map");
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
       maxZoom: 18,
-      attribution: "&copy; OpenStreetMap contributors",
+      subdomains: "abcd",
+      attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
     }).addTo(locationMap);
   }
   locationMap.setView([loc.lat, loc.lon], 12);
