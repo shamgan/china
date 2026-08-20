@@ -11,9 +11,13 @@ const SECTION_META = {
     title: "גיאוגרפיה פיסית",
     intro: "נופים, תצורות טבע ותופעות גיאולוגיות שנצפו במהלך הטיול.",
   },
+  people: {
+    title: "אנשים בסין",
+    intro: "",
+  },
 };
 
-const SECTION_ORDER = ["maps", "human", "physical"];
+const SECTION_ORDER = ["maps", "human", "physical", "people"];
 
 let items = [];
 let currentIndex = 0;
@@ -42,7 +46,7 @@ async function init() {
     section.innerHTML = `
       <div class="section-header">
         <h2>${meta.title}</h2>
-        <p>${meta.intro}</p>
+        ${meta.intro ? `<p>${meta.intro}</p>` : ""}
         <button type="button" class="slideshow-btn" data-group="${groupId}">
           <span aria-hidden="true">&#9654;</span> מצגת רצה
         </button>
@@ -59,13 +63,13 @@ async function init() {
       card.className = "card";
       card.setAttribute("role", "button");
       card.setAttribute("tabindex", "0");
-      card.setAttribute("aria-label", item.caption);
+      card.setAttribute("aria-label", item.caption || meta.title);
       card.innerHTML = `
         <span class="card-img-wrap">
           ${item.location ? `<button type="button" class="card-location-btn" aria-label="הצג מיקום על מפה"><span aria-hidden="true">📍</span></button>` : ""}
-          <img src="images/${item.filename}" alt="${escapeHtml(item.caption)}" loading="lazy">
+          <img src="images/${item.filename}" alt="${escapeHtml(item.caption || meta.title)}" loading="lazy">
         </span>
-        <span class="card-caption">${escapeHtml(item.caption)}</span>
+        ${item.caption ? `<span class="card-caption">${escapeHtml(item.caption)}</span>` : ""}
       `;
       card.addEventListener("click", () => openLightbox(globalIndex));
       card.addEventListener("keydown", (e) => {
