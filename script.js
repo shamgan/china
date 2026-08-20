@@ -400,6 +400,38 @@ lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
 });
 
+// ---------- Touch swipe navigation (mobile) ----------
+let touchStartX = null;
+let touchStartY = null;
+const SWIPE_THRESHOLD = 50;
+
+const lightboxContentEl = document.querySelector(".lightbox-content");
+lightboxContentEl.addEventListener(
+  "touchstart",
+  (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  },
+  { passive: true }
+);
+
+lightboxContentEl.addEventListener(
+  "touchend",
+  (e) => {
+    if (touchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    touchStartX = null;
+    touchStartY = null;
+    if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    pauseSlideshow();
+    // RTL gallery: swipe left (finger moves left) shows next, swipe right shows prev
+    if (dx < 0) showNext();
+    else showPrev();
+  },
+  { passive: true }
+);
+
 document.addEventListener("keydown", (e) => {
   if (!lightbox.classList.contains("open")) return;
   if (e.key === "Escape") {
