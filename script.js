@@ -32,6 +32,7 @@ const UI_STRINGS = {
   he: {
     heroEyebrow: "✦ תמונות נבחרות ✦",
     heroTitle: "טיול למרכז סין",
+    heroCredit: "טיול מאורגן במסגרת \"עולם נסתר\" בהדרכת רנן הורקני (קיץ 2026)",
     heroSubtitle: "רמת טיבט · דרך המשי · מדבר גובי",
     loading: "טוען תמונות...",
     error: "שגיאה בטעינת התמונות.",
@@ -52,6 +53,7 @@ const UI_STRINGS = {
   en: {
     heroEyebrow: "✦ Selected Photos ✦",
     heroTitle: "Trip to Central China",
+    heroCredit: "An organized trip as part of \"Olam Nistar\" (Hidden World), guided by Renan Hurkani (Summer 2026)",
     heroSubtitle: "Tibetan Plateau · Silk Road · Gobi Desert",
     loading: "Loading photos...",
     error: "Error loading photos.",
@@ -181,6 +183,7 @@ function applyLanguage() {
 
   document.getElementById("hero-eyebrow").textContent = t("heroEyebrow");
   document.getElementById("hero-title").textContent = t("heroTitle");
+  document.getElementById("hero-credit").textContent = t("heroCredit");
   document.getElementById("hero-subtitle").textContent = t("heroSubtitle");
   document.getElementById("footer-text").textContent = t("footer");
   document.querySelectorAll(".route-label").forEach((el) => {

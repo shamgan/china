@@ -164,6 +164,13 @@ h1, h2, h3 {
   color: transparent;
 }
 
+.hero-credit {
+  color: #b7ab97;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+}
+
 .hero-subtitle {
   color: #d8cdb9;
   font-size: 1.08rem;
