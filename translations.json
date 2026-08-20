@@ -1,0 +1,246 @@
+{
+  "captions": {
+    "מפת דרך המשי": "Silk Road Map",
+    "מפת תקריב מסלול הטיול": "Close-up Map of the Trip Route",
+    "מסלול הטיסות": "Flight Route",
+    "אזור הטיול": "Trip Region",
+    "מפת אזורים עיקריים": "Map of Main Regions",
+    "טקטוניקת הלוחות באזור": "Plate Tectonics of the Region",
+    "מפת צפיפות האוכלוסייה בסין": "Population Density Map of China",
+    "השוואת שטחה של סין לישראל": "Comparison of China's Size to Israel",
+    "סגנון הבנייה בערי ההרים": "Building Style in Mountain Towns",
+    "שטפון במדבר גובי": "Flash Flood in the Gobi Desert",
+    "כל הכבישים מצולמים 24/7": "All Roads Filmed 24/7",
+    "חינוך לסביבה - הכיתוב בתחתית:\nהוקירו את משאבי שטחי הביצה.\nהגנו על הסביבה האקולוגית": "Environmental Education - caption at the bottom:\nCherish wetland resources.\nProtect the ecological environment",
+    "קניון": "Shopping Mall",
+    "כניסה למקדש": "Temple Entrance",
+    "גאווה סינית - \"\"צועדים במדבר גובי ובים החולות העצום, מתעמקים במגילה הארוכה של דרך המשי, שואפים להיות בני נוער של אומה חזקה!\"": "Chinese Pride - \"Marching through the Gobi Desert and the vast sea of sand, delving into the long scroll of the Silk Road, aspiring to be youth of a strong nation!\"",
+    "מוצב גבולות סיני (כיום מוזיאון)": "Chinese Border Outpost (now a museum)",
+    "בית טיבטי (עשיר)": "Tibetan House (wealthy)",
+    "טקס תחילת עונת הקציר": "Harvest Season Opening Ceremony",
+    "גלגלי תפילה - סוטרות": "Prayer Wheels - Sutras",
+    "בודהה": "Buddha",
+    "השירותים בדרכים": "Roadside Toilets",
+    "הפקת אנרגיה - סולארי": "Energy Production - Solar",
+    "יישוב ברמת טיבט": "Settlement on the Tibetan Plateau",
+    "הבנייה מבוץ (לעניים)": "Mud Construction (for the poor)",
+    "רכסי הרים ויישובים גבוהים": "Mountain Ridges and High Settlements",
+    "רכסי ההרים ויישובים גבוהים": "Mountain Ridges and High Settlements",
+    "בית ספר אזורי": "Regional School",
+    "\"לגבש תודעה חזקה של קהילה עבור האומה הסינית\"": "\"Forge a strong sense of community for the Chinese nation\"",
+    "רעיית צאן (מקנה)": "Herding Livestock",
+    "מנזר": "Monastery",
+    "נזיר טיבטי (ואני)": "Tibetan Monk (and me)",
+    "פיתוח ברחבי רמת טיבט": "Development Across the Tibetan Plateau",
+    "שילוט המשלב אייקונים": "Signage Combining Icons",
+    "תיירות (בעיקר פנים)": "Tourism (mostly domestic)",
+    "אמריקניזציה": "Americanization",
+    "יאק טיבטי": "Tibetan Yak",
+    "הפנדות בצנגדו": "Pandas in Chengdu",
+    "תחנת הרכבת בצנגדו": "Chengdu Train Station",
+    "שילוט המפלגה הקומוניסטית": "Communist Party Signage",
+    "אזהרה משריפות יער": "Forest Fire Warning",
+    "שילוט בבייגינג": "Signage in Beijing",
+    "סוסים טיבטיים": "Tibetan Horses",
+    "תחנת כוח פחמית": "Coal Power Station",
+    "בקרת אתרים - דרכון וביומטרי": "Site Access Control - Passport and Biometric",
+    "תחנת כוח - טורבינות רוח": "Power Station - Wind Turbines",
+    "מנה חמה?": "A Hot Meal?",
+    "החדשות בטלוויזיה הסינית": "The News on Chinese TV",
+    "כפר כפרי בעמק ההרים": "A Rural Village in the Mountain Valley",
+    "הפארק הלאומי הגיאולוגי ג'אנגיה\nמחוז גאנסו": "Zhangye National Geological Park\nGansu Province",
+    "אזור דונהואנג, הר החול המהדהד": "Dunhuang Area, the Echoing Sand Mountain",
+    "מבט אל הרי סין מול המישורים": "View of China's Mountains Facing the Plains",
+    "שמורת הטבע הואנגלונג במחוז סצ'ואן": "Huanglong Nature Reserve, Sichuan Province",
+    "תהליכי קימוט": "Folding Processes",
+    "ביצות ומישורים נרחבים": "Extensive Wetlands and Plains",
+    "הנהר הצהוב": "The Yellow River",
+    "מרחבי מדבר גובי": "Expanses of the Gobi Desert",
+    "שילוט בנושא מים לעניין הגנת הסביבה ושיקום המערכת האקולוגית": "Signage About Water for Environmental Protection and Ecosystem Restoration",
+    "שילוט באתר ואנגלונג - עם סמל אונסקו": "Signage at the Huanglong Site - with the UNESCO Emblem",
+    "מפלי ג'יוזג'איגו": "Jiuzhaigou Waterfalls",
+    "מפלים בפארק הלאומי ג'יוזג'איגו": "Waterfalls in Jiuzhaigou National Park",
+    "שיירת גמלי תיירים בין הדיונות": "Tourist Camel Caravan Among the Dunes",
+    "מגילת ציור של שמונה עשר הארחטים": "Scroll Painting of the Eighteen Arhats",
+    "מקדשי המערות של מאטי סי": "The Cave Temples of Mati Si",
+    "תחנת הרכבת שי-נינג": "Xining Train Station",
+    "פנים ההיכל הראשי במנזר": "Interior of the Main Prayer Hall in the Monastery",
+    "חקלאות שלחין": "Irrigation Agriculture",
+    "ארוחה במסעדת הוטפוט סינית": "A Meal at a Chinese Hotpot Restaurant",
+    "גן ופגודה סינית": "A Chinese Garden and Pagoda"
+  },
+  "sites": {
+    "ג'יאויגואן, מחוז גאנסו": {
+      "name": "Jiayuguan, Gansu Province",
+      "description": "A city at the western end of the Great Wall of China, at the historic gateway between inner China and the Silk Road."
+    },
+    "אזור דונחואנג (מיקום משוער)": {
+      "name": "Dunhuang Area (approximate location)",
+      "description": "The area around the Dunhuang oasis in the Gobi Desert."
+    },
+    "מחוז גואאג'ואו, גאנסו": {
+      "name": "Guazhou County, Gansu",
+      "description": "A desert area along the main road in Guazhou County, between Dunhuang and Jiayuguan."
+    },
+    "נווה המדבר של דונחואנג": {
+      "name": "The Dunhuang Oasis",
+      "description": "An ancient oasis town on the Silk Road, known for the Mogao Caves and the surrounding sand dunes."
+    },
+    "לג'יאוואן, שי-נינג": {
+      "name": "Lejiawan, Xining",
+      "description": "A shopping mall in the Lejiawan neighborhood of Xining, the capital of Qinghai Province."
+    },
+    "נאנג'יה, ג'אנגיה": {
+      "name": "Nanjie, Zhangye",
+      "description": "A temple in the Nanjie suburb of Zhangye city, Gansu Province."
+    },
+    "יואצ'ואן, ג'יאויגואן": {
+      "name": "Yuquan, Jiayuguan",
+      "description": "A suburb near Jiayuguan Fort, a traditional starting point for Silk Road caravans."
+    },
+    "מבצר ג'יאויגואן": {
+      "name": "Jiayuguan Fort",
+      "description": "The historic fort at the western end of the Great Wall, once the official border gate of the Chinese empire; today a museum site."
+    },
+    "לאנג'יה, טונגרן": {
+      "name": "Langjia, Tongren",
+      "description": "A Tibetan village in the Tongren (Rebgong) area, Huangnan Prefecture, Qinghai."
+    },
+    "וו-טון שאנג-ג'ואנג, טונגרן": {
+      "name": "Wutun Shangzhuang, Tongren",
+      "description": "A village at the center of the Rebgong area, known for traditional Buddhist ceremonies."
+    },
+    "וו-טון (Wutun), טונגרן": {
+      "name": "Wutun, Tongren",
+      "description": "A village near Tongren (Rebgong), an ancient center for Tibetan Buddhist art and thangka painting."
+    },
+    "גרצה, טונגרן": {
+      "name": "Gartsé, Tongren",
+      "description": "A town at an elevation of about 3,200 m in the Huangnan area, Qinghai Province."
+    },
+    "ז'גאנה (Zhagana), מחוז טוו": {
+      "name": "Zhagana, Tewo County",
+      "description": "A picturesque mountain village in the Zhagana valley, sometimes called a 'little Shangri-La' for its scenery."
+    },
+    "ניימה לונגצון, מחוז שיאחה": {
+      "name": "Nyima Longcun, Xiahe County",
+      "description": "A village in the Xiahe area, known for the nearby Labrang Monastery."
+    },
+    "טונגרן (רבגונג)": {
+      "name": "Tongren (Rebgong)",
+      "description": "The city of Tongren, center of the Huangnan Tibetan Autonomous Prefecture."
+    },
+    "מחוז זוגה (Zoigê / Ruoergai)": {
+      "name": "Zoigê (Ruoergai) County",
+      "description": "One of the largest high-altitude grasslands in the world, traditional grazing land for Tibetan yaks."
+    },
+    "לאנגמוסי (Langmusi)": {
+      "name": "Langmusi",
+      "description": "A Tibetan Buddhist monastery town on the Gansu-Sichuan border."
+    },
+    "דאצאנג, מחוז זוגה": {
+      "name": "Dacang, Zoigê County",
+      "description": "A village on the Zoigê (Ruoergai) grassland plateau, known for its Tibetan monasteries."
+    },
+    "פארק ג'יוזג'איגו הלאומי": {
+      "name": "Jiuzhaigou National Park",
+      "description": "A UNESCO World Heritage Site, known for its turquoise lakes and waterfalls."
+    },
+    "פנגפנג, מחוז ג'יוזג'איגו": {
+      "name": "Pengfeng, Jiuzhaigou County",
+      "description": "The entrance settlement to Jiuzhaigou National Park."
+    },
+    "טיאנחוויג'ן, צ'נגדו": {
+      "name": "Tianhuizhen, Chengdu",
+      "description": "The giant panda research base in Chengdu."
+    },
+    "באוהה, צ'נגדו": {
+      "name": "Baohe, Chengdu",
+      "description": "The high-speed rail station in Chengdu, capital of Sichuan Province."
+    },
+    "זצ'אווה, מחוז ג'יוזג'איגו": {
+      "name": "Zechawa, Jiuzhaigou County",
+      "description": "A village on the edge of Jiuzhaigou National Park."
+    },
+    "נמל התעופה הבינלאומי בייג'ינג": {
+      "name": "Beijing Capital International Airport",
+      "description": "The main gateway to China's capital."
+    },
+    "ז'אוושה, מחוז זוגה": {
+      "name": "Zhawushe, Zoigê County",
+      "description": "A village on the Zoigê grassland plateau, known for raising Tibetan horses and livestock."
+    },
+    "שי-נינג (מיקום משוער)": {
+      "name": "Xining (approximate location)",
+      "description": "The area around the city of Xining, capital of Qinghai Province."
+    },
+    "צ'יאנג'ין, דונחואנג": {
+      "name": "Qianjin, Dunhuang",
+      "description": "A suburb on the outskirts of Dunhuang, en route to the area's main tourist sites."
+    },
+    "חדונג, מחוז גואאג'ואו": {
+      "name": "Hedong, Guazhou County",
+      "description": "An area where large wind turbine farms have been built along the desert."
+    },
+    "מחוז גואאג'ואו (מיקום משוער)": {
+      "name": "Guazhou County (approximate location)",
+      "description": "A roadside stop in Guazhou County, Gansu."
+    },
+    "שאנגבא, מחוז ג'ויוצ'ואן": {
+      "name": "Shangba, Jiuquan Prefecture",
+      "description": "A rural settlement in the valley between Jiayuguan and Dunhuang."
+    },
+    "הפארק הגיאולוגי הלאומי ג'אנגיה דאנשיה": {
+      "name": "Zhangye Danxia National Geological Park",
+      "description": "Colorful rock formations created by the erosion of sand and mineral layers over millions of years."
+    },
+    "הר החול המהדהד (Mingsha Shan), דונחואנג": {
+      "name": "The Echoing Sand Mountain (Mingsha Shan), Dunhuang",
+      "description": "A giant dune ridge on the edge of Dunhuang, famous for the 'echoing' sound the sand makes in the wind."
+    },
+    "שמורת הטבע הואנגלונג, מחוז סונגפאן": {
+      "name": "Huanglong Nature Reserve, Songpan County",
+      "description": "A UNESCO World Heritage Site, known for its colorful pools formed by travertine mineral deposits."
+    },
+    "אזור ז'גאנה, מחוז טוו": {
+      "name": "The Zhagana Area, Tewo County",
+      "description": "Folded rock cliffs in the Zhagana area, evidence of the geological processes that raised the Tibetan Plateau."
+    },
+    "מחוז לוקו, גאנסו": {
+      "name": "Luqu County, Gansu",
+      "description": "Extensive wetlands and plains in the transition area between the grassland plateau and Luqu County."
+    },
+    "הנהר הצהוב, מחוז ג'יינצ'ה": {
+      "name": "The Yellow River, Jianzha County",
+      "description": "A stretch of the Yellow River in the Jianzha area of Qinghai Province."
+    },
+    "הר החול המהדהד, דונחואנג (מיקום משוער)": {
+      "name": "The Echoing Sand Mountain, Dunhuang (approximate location)",
+      "description": "The sand dunes on the edge of Dunhuang."
+    },
+    "נהר הלבן (Bailong), מחוז זוגה": {
+      "name": "The White Dragon River (Bailong), Zoigê County",
+      "description": "Signage regarding the management of the White Dragon River flowing through the Zoigê grassland plateau."
+    },
+    "אגם הסהר (Yueyaquan), דונחואנג": {
+      "name": "Crescent Lake (Yueyaquan), Dunhuang",
+      "description": "A tiny oasis lake amid the dunes of the Gobi Desert, a popular spot for camel rides in Dunhuang."
+    },
+    "ג'אנגיה, מחוז גאנסו": {
+      "name": "Zhangye, Gansu Province",
+      "description": "An ancient scroll painting depicting the Eighteen Arhats (Luohan) - disciples of Buddha who attained enlightenment."
+    },
+    "מאטי סי (Horse Hoof Temple), מחוז סונאן": {
+      "name": "Mati Si (Horse Hoof Temple), Sunan County",
+      "description": "A complex of temples and monasteries carved into a sandstone cliff, an ancient center of Tibetan Buddhist tradition."
+    },
+    "תחנת הרכבת, שי-נינג": {
+      "name": "Xining Train Station",
+      "description": "The central train station of Xining, capital of Qinghai Province and gateway to the Tibetan Plateau."
+    },
+    "פארק וואנג-ג'יאנג, צ'נגדו": {
+      "name": "Wangjianglou Park, Chengdu",
+      "description": "A scenic park with a pond, bridge and bamboo pagoda in Chengdu, also known as the River-Viewing Tower Park."
+    }
+  }
+}

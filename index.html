@@ -16,6 +16,8 @@
 
 <div class="journey-progress" id="journey-progress" aria-hidden="true"><span id="journey-progress-fill"></span></div>
 
+<button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch language / החלף שפה">EN</button>
+
 <header class="hero">
   <div class="hero-sky" aria-hidden="true"></div>
   <div class="hero-mountains" aria-hidden="true">
@@ -25,25 +27,25 @@
     </svg>
   </div>
   <div class="hero-inner">
-    <p class="hero-eyebrow">&#10022; אלבום טיול &#10022;</p>
-    <h1>טיול למרכז סין</h1>
-    <p class="hero-subtitle">רמת טיבט &middot; דרך המשי &middot; מדבר גובי</p>
+    <p class="hero-eyebrow" id="hero-eyebrow">&#10022; אלבום טיול &#10022;</p>
+    <h1 id="hero-title">טיול למרכז סין</h1>
+    <p class="hero-subtitle" id="hero-subtitle">רמת טיבט &middot; דרך המשי &middot; מדבר גובי</p>
     <nav class="route-nav" aria-label="ניווט בין קטגוריות">
-      <a href="#maps" class="route-stop"><span class="route-dot">1</span><span class="route-label">מפות</span></a>
-      <a href="#human" class="route-stop"><span class="route-dot">2</span><span class="route-label">גיאוגרפיה אנושית</span></a>
-      <a href="#physical" class="route-stop"><span class="route-dot">3</span><span class="route-label">גיאוגרפיה פיסית</span></a>
-      <a href="#people" class="route-stop"><span class="route-dot">4</span><span class="route-label">אנשים בסין</span></a>
+      <a href="#maps" class="route-stop"><span class="route-dot">1</span><span class="route-label" data-group="maps">מפות</span></a>
+      <a href="#human" class="route-stop"><span class="route-dot">2</span><span class="route-label" data-group="human">גיאוגרפיה אנושית</span></a>
+      <a href="#physical" class="route-stop"><span class="route-dot">3</span><span class="route-label" data-group="physical">גיאוגרפיה פיסית</span></a>
+      <a href="#people" class="route-stop"><span class="route-dot">4</span><span class="route-label" data-group="people">אנשים בסין</span></a>
     </nav>
   </div>
 </header>
 
 <main id="gallery-root">
   <!-- הקטגוריות נבנות אוטומטית ע"י script.js מתוך data.json -->
-  <p class="loading">טוען תמונות...</p>
+  <p class="loading" id="loading-text">טוען תמונות...</p>
 </main>
 
 <footer class="site-footer">
-  <p>אלבום דיגיטלי מהטיול לסין ולרמת טיבט</p>
+  <p id="footer-text">אלבום דיגיטלי מהטיול לסין ולרמת טיבט</p>
 </footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
@@ -61,7 +63,7 @@
     <div class="lightbox-caption">
       <p id="lightbox-caption-text"></p>
       <button class="location-btn lightbox-location-btn" id="lightbox-location-btn" type="button" hidden>
-        <span aria-hidden="true">📍</span> מיקום הצילום
+        <span aria-hidden="true">📍</span> <span id="lightbox-location-btn-text">מיקום הצילום</span>
       </button>
       <p class="lightbox-counter" id="lightbox-counter"></p>
     </div>

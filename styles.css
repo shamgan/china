@@ -54,6 +54,46 @@ h1, h2, h3 {
   transition: width 0.1s linear;
 }
 
+/* ---------- Language toggle ---------- */
+.lang-toggle {
+  position: fixed;
+  top: 0.9rem;
+  left: 0.9rem;
+  z-index: 1100;
+  border: 1px solid rgba(247, 241, 230, 0.5);
+  background: rgba(12, 20, 40, 0.55);
+  color: #f7f1e6;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--terracotta);
+  transform: translateY(-1px);
+}
+
+/* ---------- English-mode text alignment ---------- */
+.lang-en .card-caption,
+.lang-en #location-description,
+.lang-en #location-site-name,
+.lang-en .lightbox-caption,
+.lang-en .section-header p {
+  direction: ltr;
+  text-align: left;
+}
+
+.lang-en .location-approx-note {
+  direction: ltr;
+  text-align: left;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;

@@ -1,23 +1,97 @@
 const SECTION_META = {
   maps: {
-    title: "מפות",
-    intro: "מפות שממחישות את מסלול הטיול, האזור הגיאוגרפי ומיקומו בעולם.",
+    title: { he: "מפות", en: "Maps" },
+    intro: {
+      he: "מפות שממחישות את מסלול הטיול, האזור הגיאוגרפי ומיקומו בעולם.",
+      en: "Maps illustrating the trip route, the geographic region, and its location in the world.",
+    },
   },
   human: {
-    title: "גיאוגרפיה אנושית",
-    intro: "דברים מעניינים לאורך מסלול הטיול: אנשים, תרבות, דת ואורח חיים ברמת טיבט ובמרכז סין.",
+    title: { he: "גיאוגרפיה אנושית", en: "Human Geography" },
+    intro: {
+      he: "דברים מעניינים לאורך מסלול הטיול: אנשים, תרבות, דת ואורח חיים ברמת טיבט ובמרכז סין.",
+      en: "Interesting things along the trip route: people, culture, religion and way of life on the Tibetan Plateau and in central China.",
+    },
   },
   physical: {
-    title: "גיאוגרפיה פיסית",
-    intro: "נופים, תצורות טבע ותופעות גיאולוגיות שנצפו במהלך הטיול.",
+    title: { he: "גיאוגרפיה פיסית", en: "Physical Geography" },
+    intro: {
+      he: "נופים, תצורות טבע ותופעות גיאולוגיות שנצפו במהלך הטיול.",
+      en: "Landscapes, natural formations and geological phenomena observed during the trip.",
+    },
   },
   people: {
-    title: "אנשים בסין",
-    intro: "",
+    title: { he: "אנשים בסין", en: "People in China" },
+    intro: { he: "", en: "" },
   },
 };
 
 const SECTION_ORDER = ["maps", "human", "physical", "people"];
+
+const UI_STRINGS = {
+  he: {
+    heroEyebrow: "✦ אלבום טיול ✦",
+    heroTitle: "טיול למרכז סין",
+    heroSubtitle: "רמת טיבט · דרך המשי · מדבר גובי",
+    loading: "טוען תמונות...",
+    error: "שגיאה בטעינת התמונות.",
+    slideshowBtn: "מצגת רצה",
+    locationBtnText: "מיקום הצילום",
+    locationBtnAria: "הצג מיקום על מפה",
+    approxNote: "* מיקום משוער, מבוסס על תמונה סמוכה שצולמה עם GPS",
+    footer: "אלבום דיגיטלי מהטיול לסין ולרמת טיבט",
+    langToggle: "EN",
+    closeAria: "סגירה",
+    prevAria: "התמונה הקודמת",
+    nextAria: "התמונה הבאה",
+    pauseAria: "השהה מצגת",
+    resumeAria: "המשך מצגת",
+    fullscreenEnterAria: "הגדלה למסך מלא",
+    fullscreenExitAria: "יציאה ממסך מלא",
+  },
+  en: {
+    heroEyebrow: "✦ Trip Album ✦",
+    heroTitle: "Trip to Central China",
+    heroSubtitle: "Tibetan Plateau · Silk Road · Gobi Desert",
+    loading: "Loading photos...",
+    error: "Error loading photos.",
+    slideshowBtn: "Slideshow",
+    locationBtnText: "Photo Location",
+    locationBtnAria: "Show location on map",
+    approxNote: "* Approximate location, based on a nearby photo taken with GPS",
+    footer: "A digital album from the trip to China and the Tibetan Plateau",
+    langToggle: "עב",
+    closeAria: "Close",
+    prevAria: "Previous photo",
+    nextAria: "Next photo",
+    pauseAria: "Pause slideshow",
+    resumeAria: "Resume slideshow",
+    fullscreenEnterAria: "Enter fullscreen",
+    fullscreenExitAria: "Exit fullscreen",
+  },
+};
+
+let currentLang = localStorage.getItem("lang") === "en" ? "en" : "he";
+let translations = { captions: {}, sites: {} };
+
+function t(key) {
+  return UI_STRINGS[currentLang][key];
+}
+
+function tCaption(heCaption) {
+  if (!heCaption) return heCaption;
+  if (currentLang === "en" && translations.captions[heCaption]) {
+    return translations.captions[heCaption];
+  }
+  return heCaption;
+}
+
+function tSite(loc) {
+  if (currentLang === "en" && translations.sites[loc.siteName]) {
+    return translations.sites[loc.siteName];
+  }
+  return { name: loc.siteName, description: loc.description };
+}
 
 let items = [];
 let currentIndex = 0;
@@ -25,30 +99,38 @@ let currentIndex = 0;
 async function init() {
   const root = document.getElementById("gallery-root");
   try {
-    const res = await fetch("data.json");
-    items = await res.json();
+    const [dataRes, transRes] = await Promise.all([fetch("data.json"), fetch("translations.json")]);
+    items = await dataRes.json();
+    translations = await transRes.json();
   } catch (e) {
-    root.innerHTML = '<p class="loading">שגיאה בטעינת התמונות.</p>';
+    root.innerHTML = `<p class="loading">${t("error")}</p>`;
     return;
   }
 
+  applyLanguage();
+}
+
+function renderGallery() {
+  const root = document.getElementById("gallery-root");
   root.innerHTML = "";
 
   SECTION_ORDER.forEach((groupId) => {
     const groupItems = items.filter((it) => it.group === groupId);
     if (!groupItems.length) return;
 
-    const meta = SECTION_META[groupId] || { title: groupId, intro: "" };
+    const meta = SECTION_META[groupId] || { title: { he: groupId, en: groupId }, intro: { he: "", en: "" } };
+    const title = meta.title[currentLang];
+    const intro = meta.intro[currentLang];
     const section = document.createElement("section");
     section.className = "section";
     section.id = groupId;
 
     section.innerHTML = `
       <div class="section-header">
-        <h2>${meta.title}</h2>
-        ${meta.intro ? `<p>${meta.intro}</p>` : ""}
+        <h2>${title}</h2>
+        ${intro ? `<p>${intro}</p>` : ""}
         <button type="button" class="slideshow-btn" data-group="${groupId}">
-          <span aria-hidden="true">&#9654;</span> מצגת רצה
+          <span aria-hidden="true">&#9654;</span> ${t("slideshowBtn")}
         </button>
       </div>
       <div class="grid" data-group="${groupId}"></div>
@@ -59,17 +141,18 @@ async function init() {
     const grid = section.querySelector(".grid");
     groupItems.forEach((item) => {
       const globalIndex = items.indexOf(item);
+      const caption = tCaption(item.caption);
       const card = document.createElement("div");
       card.className = "card";
       card.setAttribute("role", "button");
       card.setAttribute("tabindex", "0");
-      card.setAttribute("aria-label", item.caption || meta.title);
+      card.setAttribute("aria-label", caption || title);
       card.innerHTML = `
         <span class="card-img-wrap">
-          ${item.location ? `<button type="button" class="card-location-btn" aria-label="הצג מיקום על מפה"><span aria-hidden="true">📍</span></button>` : ""}
-          <img src="images/${item.filename}" alt="${escapeHtml(item.caption || meta.title)}" loading="lazy">
+          ${item.location ? `<button type="button" class="card-location-btn" aria-label="${t("locationBtnAria")}"><span aria-hidden="true">📍</span></button>` : ""}
+          <img src="images/${item.filename}" alt="${escapeHtml(caption || title)}" loading="lazy">
         </span>
-        ${item.caption ? `<span class="card-caption">${escapeHtml(item.caption)}</span>` : ""}
+        ${caption ? `<span class="card-caption">${escapeHtml(caption)}</span>` : ""}
       `;
       card.addEventListener("click", () => openLightbox(globalIndex));
       card.addEventListener("keydown", (e) => {
@@ -91,6 +174,46 @@ async function init() {
     root.appendChild(section);
   });
 }
+
+function applyLanguage() {
+  document.documentElement.lang = currentLang;
+  document.body.classList.toggle("lang-en", currentLang === "en");
+
+  document.getElementById("hero-eyebrow").textContent = t("heroEyebrow");
+  document.getElementById("hero-title").textContent = t("heroTitle");
+  document.getElementById("hero-subtitle").textContent = t("heroSubtitle");
+  document.getElementById("footer-text").textContent = t("footer");
+  document.querySelectorAll(".route-label").forEach((el) => {
+    const g = el.getAttribute("data-group");
+    const meta = SECTION_META[g];
+    if (meta) el.textContent = meta.title[currentLang];
+  });
+  document.getElementById("lang-toggle").textContent = t("langToggle");
+  document.getElementById("lightbox-close").setAttribute("aria-label", t("closeAria"));
+  document.getElementById("lightbox-prev").setAttribute("aria-label", t("prevAria"));
+  document.getElementById("lightbox-next").setAttribute("aria-label", t("nextAria"));
+  document.getElementById("location-modal-close").setAttribute("aria-label", t("closeAria"));
+  document.getElementById("lightbox-location-btn-text").textContent = t("locationBtnText");
+
+  renderGallery();
+
+  if (lightbox.classList.contains("open")) {
+    updateLightbox();
+  }
+  if (playToggleBtn && !playToggleBtn.hidden) {
+    playToggleBtn.setAttribute("aria-label", slideshowTimer ? t("pauseAria") : t("resumeAria"));
+  }
+  updateFullscreenIcon();
+  if (locationModal.classList.contains("open") && currentLocationItem) {
+    openLocationModal(currentLocationItem);
+  }
+}
+
+document.getElementById("lang-toggle").addEventListener("click", () => {
+  currentLang = currentLang === "he" ? "en" : "he";
+  localStorage.setItem("lang", currentLang);
+  applyLanguage();
+});
 
 function escapeHtml(str) {
   const div = document.createElement("div");
@@ -126,9 +249,10 @@ const lightboxLocationBtn = document.getElementById("lightbox-location-btn");
 function updateLightbox() {
   const item = items[currentIndex];
   if (!item) return;
+  const caption = tCaption(item.caption);
   lightboxImg.src = `images/${item.filename}`;
-  lightboxImg.alt = item.caption;
-  lightboxCaption.textContent = item.caption;
+  lightboxImg.alt = caption;
+  lightboxCaption.textContent = caption;
   if (slideshowGroup) {
     const pos = slideshowIndices.indexOf(currentIndex);
     lightboxCounter.textContent = `${pos + 1} / ${slideshowIndices.length}`;
@@ -210,7 +334,7 @@ function pauseSlideshow() {
   clearInterval(slideshowTimer);
   slideshowTimer = null;
   playIcon.innerHTML = "&#9654;";
-  playToggleBtn.setAttribute("aria-label", "המשך מצגת");
+  playToggleBtn.setAttribute("aria-label", t("resumeAria"));
 }
 
 function resumeSlideshow() {
@@ -218,7 +342,7 @@ function resumeSlideshow() {
   clearInterval(slideshowTimer);
   slideshowTimer = setInterval(showNext, SLIDESHOW_INTERVAL_MS);
   playIcon.innerHTML = "&#10074;&#10074;";
-  playToggleBtn.setAttribute("aria-label", "השהה מצגת");
+  playToggleBtn.setAttribute("aria-label", t("pauseAria"));
 }
 
 playToggleBtn.addEventListener("click", () => {
@@ -259,10 +383,10 @@ fullscreenBtn.addEventListener("click", () => {
 function updateFullscreenIcon() {
   if (isFullscreen()) {
     fullscreenIcon.textContent = "✕";
-    fullscreenBtn.setAttribute("aria-label", "יציאה ממסך מלא");
+    fullscreenBtn.setAttribute("aria-label", t("fullscreenExitAria"));
   } else {
     fullscreenIcon.innerHTML = "&#9974;";
-    fullscreenBtn.setAttribute("aria-label", "הגדלה למסך מלא");
+    fullscreenBtn.setAttribute("aria-label", t("fullscreenEnterAria"));
   }
 }
 
@@ -296,13 +420,17 @@ const locationDescription = document.getElementById("location-description");
 const locationApproxNote = document.getElementById("location-approx-note");
 let locationMap = null;
 let locationMarker = null;
+let currentLocationItem = null;
 
 function openLocationModal(item) {
   const loc = item.location;
   if (!loc) return;
+  currentLocationItem = item;
 
-  locationSiteName.textContent = loc.siteName;
-  locationDescription.textContent = loc.description;
+  const site = tSite(loc);
+  locationSiteName.textContent = site.name;
+  locationDescription.textContent = site.description;
+  locationApproxNote.textContent = t("approxNote");
   locationApproxNote.hidden = !loc.approx;
 
   locationModal.classList.add("open");
