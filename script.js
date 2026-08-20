@@ -203,4 +203,15 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && locationModal.classList.contains("open")) closeLocationModal();
 });
 
+// ---------- Journey progress bar ----------
+const journeyFill = document.getElementById("journey-progress-fill");
+function updateJourneyProgress() {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  journeyFill.style.width = `${Math.min(100, Math.max(0, pct))}%`;
+}
+window.addEventListener("scroll", updateJourneyProgress, { passive: true });
+window.addEventListener("resize", updateJourneyProgress);
+
 init();
+updateJourneyProgress();

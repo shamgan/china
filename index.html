@@ -6,20 +6,32 @@
 <title>טיול למרכז סין | רמת טיבט</title>
 <meta name="description" content="גלריית תמונות נבחרות מהטיול לרמת טיבט ומרכז סין - מפות, גיאוגרפיה אנושית וגיאוגרפיה פיסית.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 
+<div class="journey-progress" id="journey-progress" aria-hidden="true"><span id="journey-progress-fill"></span></div>
+
 <header class="hero">
+  <div class="hero-sky" aria-hidden="true"></div>
+  <div class="hero-mountains" aria-hidden="true">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
+      <path class="mtn-back" d="M0,180 L120,90 L240,150 L380,60 L520,140 L660,40 L820,130 L960,70 L1100,150 L1260,90 L1440,160 L1440,220 L0,220 Z"></path>
+      <path class="mtn-front" d="M0,220 L100,140 L220,190 L340,110 L470,180 L600,100 L760,190 L900,120 L1040,200 L1180,130 L1320,200 L1440,150 L1440,220 L0,220 Z"></path>
+    </svg>
+  </div>
   <div class="hero-inner">
-    <p class="hero-eyebrow">אלבום טיול</p>
+    <p class="hero-eyebrow">&#10022; אלבום טיול &#10022;</p>
     <h1>טיול למרכז סין</h1>
     <p class="hero-subtitle">רמת טיבט &middot; דרך המשי &middot; מדבר גובי</p>
-    <nav class="hero-nav" aria-label="ניווט בין קטגוריות">
-      <a href="#maps">מפות</a>
-      <a href="#human">גיאוגרפיה אנושית</a>
-      <a href="#physical">גיאוגרפיה פיסית</a>
+    <nav class="route-nav" aria-label="ניווט בין קטגוריות">
+      <a href="#maps" class="route-stop"><span class="route-dot">1</span><span class="route-label">מפות</span></a>
+      <a href="#human" class="route-stop"><span class="route-dot">2</span><span class="route-label">גיאוגרפיה אנושית</span></a>
+      <a href="#physical" class="route-stop"><span class="route-dot">3</span><span class="route-label">גיאוגרפיה פיסית</span></a>
     </nav>
   </div>
 </header>
