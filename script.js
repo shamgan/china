@@ -30,7 +30,7 @@ const SECTION_ORDER = ["maps", "human", "physical", "people"];
 
 const UI_STRINGS = {
   he: {
-    heroEyebrow: "✦ אלבום טיול ✦",
+    heroEyebrow: "✦ תמונות נבחרות ✦",
     heroTitle: "טיול למרכז סין",
     heroSubtitle: "רמת טיבט · דרך המשי · מדבר גובי",
     loading: "טוען תמונות...",
@@ -50,7 +50,7 @@ const UI_STRINGS = {
     fullscreenExitAria: "יציאה ממסך מלא",
   },
   en: {
-    heroEyebrow: "✦ Trip Album ✦",
+    heroEyebrow: "✦ Selected Photos ✦",
     heroTitle: "Trip to Central China",
     heroSubtitle: "Tibetan Plateau · Silk Road · Gobi Desert",
     loading: "Loading photos...",
