@@ -68,7 +68,8 @@
     "גן ופגודה סינית": "A Chinese Garden and Pagoda",
     "הר החול המהדהד, דונחואנג": "The Echoing Sand Mountain, Dunhuang",
     "מגדל המשואה של מעבר יאנגגוואן": "The Beacon Tower of Yangguan Pass",
-    "מסלול הטיול": "The Trip Route"
+    "מסלול הטיול": "The Trip Route",
+    "גובה מקסימלי במהלך הטיול": "Maximum Elevation During the Trip"
   },
   "sites": {
     "ג'יאויגואן, מחוז גאנסו": {
@@ -246,6 +247,10 @@
     "מעבר יאנגגוואן, דונחואנג": {
       "name": "Yangguan Pass, Dunhuang",
       "description": "One of the two historic southern gateways of the Silk Road, which guarded the western frontier of ancient China; today only the ruins of a beacon tower remain."
+    },
+    "כביש G213, מחוז לוקו (3,511 מ׳)": {
+      "name": "G213 Highway, Luqu County (3,511 m)",
+      "description": "The highest point recorded during the trip, on a mountain pass along the G213 highway in Luqu County, Gansu."
     }
   }
 }
