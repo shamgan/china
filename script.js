@@ -43,9 +43,14 @@ async function init() {
       <div class="section-header">
         <h2>${meta.title}</h2>
         <p>${meta.intro}</p>
+        <button type="button" class="slideshow-btn" data-group="${groupId}">
+          <span aria-hidden="true">&#9654;</span> מצגת רצה
+        </button>
       </div>
       <div class="grid" data-group="${groupId}"></div>
     `;
+
+    section.querySelector(".slideshow-btn").addEventListener("click", () => startSlideshow(groupId));
 
     const grid = section.querySelector(".grid");
     groupItems.forEach((item) => {
@@ -96,6 +101,7 @@ const lightboxCaption = document.getElementById("lightbox-caption-text");
 const lightboxCounter = document.getElementById("lightbox-counter");
 
 function openLightbox(index) {
+  stopSlideshow();
   currentIndex = index;
   updateLightbox();
   lightbox.classList.add("open");
@@ -104,6 +110,8 @@ function openLightbox(index) {
 }
 
 function closeLightbox() {
+  stopSlideshow();
+  if (isFullscreen()) exitFullscreen();
   lightbox.classList.remove("open");
   lightbox.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
@@ -117,7 +125,12 @@ function updateLightbox() {
   lightboxImg.src = `images/${item.filename}`;
   lightboxImg.alt = item.caption;
   lightboxCaption.textContent = item.caption;
-  lightboxCounter.textContent = `${currentIndex + 1} / ${items.length}`;
+  if (slideshowGroup) {
+    const pos = slideshowIndices.indexOf(currentIndex);
+    lightboxCounter.textContent = `${pos + 1} / ${slideshowIndices.length}`;
+  } else {
+    lightboxCounter.textContent = `${currentIndex + 1} / ${items.length}`;
+  }
   if (item.location) {
     lightboxLocationBtn.hidden = false;
     lightboxLocationBtn.onclick = () => openLocationModal(item);
@@ -128,18 +141,129 @@ function updateLightbox() {
 }
 
 function showNext() {
-  currentIndex = (currentIndex + 1) % items.length;
+  if (slideshowGroup) {
+    const pos = slideshowIndices.indexOf(currentIndex);
+    currentIndex = slideshowIndices[(pos + 1) % slideshowIndices.length];
+  } else {
+    currentIndex = (currentIndex + 1) % items.length;
+  }
   updateLightbox();
 }
 
 function showPrev() {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  if (slideshowGroup) {
+    const pos = slideshowIndices.indexOf(currentIndex);
+    currentIndex = slideshowIndices[(pos - 1 + slideshowIndices.length) % slideshowIndices.length];
+  } else {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+  }
   updateLightbox();
 }
 
 document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
-document.getElementById("lightbox-next").addEventListener("click", showNext);
-document.getElementById("lightbox-prev").addEventListener("click", showPrev);
+document.getElementById("lightbox-next").addEventListener("click", () => { pauseSlideshow(); showNext(); });
+document.getElementById("lightbox-prev").addEventListener("click", () => { pauseSlideshow(); showPrev(); });
+
+// ---------- Slideshow ----------
+const SLIDESHOW_INTERVAL_MS = 4000;
+let slideshowGroup = null;
+let slideshowIndices = [];
+let slideshowTimer = null;
+const playToggleBtn = document.getElementById("lightbox-play-toggle");
+const playIcon = document.getElementById("lightbox-play-icon");
+
+function startSlideshow(groupId) {
+  const indices = items.reduce((acc, it, i) => {
+    if (it.group === groupId) acc.push(i);
+    return acc;
+  }, []);
+  if (!indices.length) return;
+  slideshowGroup = groupId;
+  slideshowIndices = indices;
+  playToggleBtn.hidden = false;
+  openLightboxForSlideshow(indices[0]);
+  resumeSlideshow();
+}
+
+function openLightboxForSlideshow(index) {
+  currentIndex = index;
+  updateLightbox();
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function stopSlideshow() {
+  slideshowGroup = null;
+  slideshowIndices = [];
+  clearInterval(slideshowTimer);
+  slideshowTimer = null;
+  playToggleBtn.hidden = true;
+}
+
+function pauseSlideshow() {
+  if (!slideshowGroup) return;
+  clearInterval(slideshowTimer);
+  slideshowTimer = null;
+  playIcon.innerHTML = "&#9654;";
+  playToggleBtn.setAttribute("aria-label", "המשך מצגת");
+}
+
+function resumeSlideshow() {
+  if (!slideshowGroup) return;
+  clearInterval(slideshowTimer);
+  slideshowTimer = setInterval(showNext, SLIDESHOW_INTERVAL_MS);
+  playIcon.innerHTML = "&#10074;&#10074;";
+  playToggleBtn.setAttribute("aria-label", "השהה מצגת");
+}
+
+playToggleBtn.addEventListener("click", () => {
+  if (slideshowTimer) {
+    pauseSlideshow();
+  } else {
+    resumeSlideshow();
+  }
+});
+
+// ---------- Fullscreen ----------
+const fullscreenBtn = document.getElementById("lightbox-fullscreen-toggle");
+const fullscreenIcon = document.getElementById("lightbox-fullscreen-icon");
+
+function isFullscreen() {
+  return !!(document.fullscreenElement || document.webkitFullscreenElement);
+}
+
+function enterFullscreen() {
+  const el = lightbox;
+  const req = el.requestFullscreen ? el.requestFullscreen() : el.webkitRequestFullscreen && el.webkitRequestFullscreen();
+  if (req && req.catch) req.catch(() => {});
+}
+
+function exitFullscreen() {
+  const req = document.exitFullscreen ? document.exitFullscreen() : document.webkitExitFullscreen && document.webkitExitFullscreen();
+  if (req && req.catch) req.catch(() => {});
+}
+
+fullscreenBtn.addEventListener("click", () => {
+  if (isFullscreen()) {
+    exitFullscreen();
+  } else {
+    enterFullscreen();
+  }
+});
+
+function updateFullscreenIcon() {
+  if (isFullscreen()) {
+    fullscreenIcon.textContent = "✕";
+    fullscreenBtn.setAttribute("aria-label", "יציאה ממסך מלא");
+  } else {
+    fullscreenIcon.innerHTML = "&#9974;";
+    fullscreenBtn.setAttribute("aria-label", "הגדלה למסך מלא");
+  }
+}
+
+document.addEventListener("fullscreenchange", updateFullscreenIcon);
+document.addEventListener("webkitfullscreenchange", updateFullscreenIcon);
 
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
@@ -147,10 +271,18 @@ lightbox.addEventListener("click", (e) => {
 
 document.addEventListener("keydown", (e) => {
   if (!lightbox.classList.contains("open")) return;
-  if (e.key === "Escape") closeLightbox();
+  if (e.key === "Escape") {
+    if (isFullscreen()) return; // let the browser exit fullscreen first
+    closeLightbox();
+  }
   // RTL gallery: visually-left arrow key shows next, visually-right shows prev
-  if (e.key === "ArrowLeft") showNext();
-  if (e.key === "ArrowRight") showPrev();
+  if (e.key === "ArrowLeft") { pauseSlideshow(); showNext(); }
+  if (e.key === "ArrowRight") { pauseSlideshow(); showPrev(); }
+  if (e.key === " " && slideshowGroup) {
+    e.preventDefault();
+    if (slideshowTimer) pauseSlideshow();
+    else resumeSlideshow();
+  }
 });
 
 // ---------- Location modal ----------
