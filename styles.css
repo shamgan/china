@@ -612,12 +612,41 @@ main {
 }
 
 @media (max-width: 640px) {
-  .hero { padding: 4rem 1.2rem 6.5rem; }
-  .hero-mountains { height: 100px; }
-  .route-label { font-size: 0.72rem; }
+  .hero { padding: 3.2rem 1rem 5.5rem; }
+  .hero-mountains { height: 90px; }
+  .hero-eyebrow { font-size: 0.68rem; }
+  .hero-subtitle { font-size: 0.95rem; margin-bottom: 2rem; }
+  .route-nav { max-width: 100%; }
+  .route-label { font-size: 0.68rem; }
   .route-dot { width: 26px; height: 26px; font-size: 0.75rem; }
-  main { padding: 2.5rem 1rem 1.5rem; }
-  .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.9rem; }
-  .lightbox-nav { width: 38px; height: 38px; font-size: 1.3rem; }
-  .lightbox-close { width: 38px; height: 38px; font-size: 1.3rem; }
+  main { padding: 2.2rem 0.8rem 1.5rem; }
+  .section { margin-bottom: 3.2rem; }
+  .section-header h2 { font-size: 1.5rem; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); gap: 0.6rem; }
+  .card-caption { font-size: 0.82rem; padding: 0.6rem 0.75rem 0.75rem; }
+  .card-location-btn { width: 30px; height: 30px; font-size: 0.85rem; }
+
+  .lightbox { padding: 1rem; }
+  .lightbox-nav,
+  .lightbox-close,
+  .lightbox-play-toggle,
+  .lightbox-fullscreen-toggle {
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+  }
+  .lightbox-close { top: 0.7rem; left: 0.7rem; }
+  .lightbox-play-toggle { top: 0.7rem; left: 4.3rem; font-size: 0.85rem; }
+  .lightbox-fullscreen-toggle { top: 0.7rem; right: 0.7rem; font-size: 1rem; }
+  .lightbox-prev { right: 0.6rem; }
+  .lightbox-next { left: 0.6rem; }
+  .lightbox-content img { max-height: 60vh; }
+  .lightbox-caption { margin-top: 0.8rem; }
+  #lightbox-caption-text { font-size: 0.95rem; }
+
+  .location-modal-panel { padding: 1.2rem; }
+  #location-map { height: 220px; }
+  #location-site-name { font-size: 1.1rem; margin-inline-end: 2.2rem; }
+
+  .journey-progress { height: 3px; }
 }
