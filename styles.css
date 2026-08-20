@@ -511,20 +511,34 @@ main {
   border: 1px solid rgba(205, 154, 61, 0.25);
 }
 
-.lightbox:fullscreen {
-  background: #0a0906;
-}
-
-.lightbox:fullscreen .lightbox-content img {
-  max-height: 85vh;
-}
-
+.lightbox:fullscreen,
 .lightbox:-webkit-full-screen {
-  background: #0a0906;
+  background: #000;
+  padding: 0;
 }
 
+.lightbox:fullscreen .lightbox-content,
+.lightbox:-webkit-full-screen .lightbox-content {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lightbox:fullscreen .lightbox-content img,
 .lightbox:-webkit-full-screen .lightbox-content img {
-  max-height: 85vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.lightbox:fullscreen .lightbox-caption,
+.lightbox:-webkit-full-screen .lightbox-caption {
+  display: none;
 }
 
 .lightbox-caption {
